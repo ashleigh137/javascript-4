@@ -1,3 +1,5 @@
+const { useDebugValue } = require("react");
+
 var student={"name":"Ashleigh","age":13,"favcolor":"pink"};
 document.write(student+"<br>")
 document.write("My name is"+student["name"]+"<br>")
@@ -24,6 +26,19 @@ function findMax()
         {
             max = arguments[i];
         } 
+    }
+    return max;
+}
+document.write(findMax(4,5,6,8,2)) ;
+function findMax()
+{
+    var i;
+    var max = 0;
+    for(i = 0; i < arguments.length; i++)
+    {
+    
+            max = max+arguments[i];
+        
     }
     return max;
 }
